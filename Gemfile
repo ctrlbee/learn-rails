@@ -43,3 +43,21 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+# learn-rails
+gem 'activerecord-tableless'
+gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form', '>= 3.0.0.rc'
+group :development do
+  gem 'better_errors'
+  gem 'quiet_assets'
+end
+
+
+
+
