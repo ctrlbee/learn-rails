@@ -5,10 +5,11 @@ class Owner
 	end 
 
 	def birthdate 
-		birthdate = Date.new(1990, 12, 22)
+		birthdate = Date.new(1979, 7, 13)
 	end 
 
   def countdown
+  	Rails.logger.debug 'DEBUG: owner countdown method son!'
     today = Date.today
     birthday = Date.new(today.year, birthdate.month, birthdate.day)
     if birthday > today
@@ -17,6 +18,8 @@ class Owner
       countdown = (birthday.next_year - today).to_i
     end
   end
+
+
 
 
 end 
